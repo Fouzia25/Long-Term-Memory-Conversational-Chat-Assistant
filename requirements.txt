@@ -1,0 +1,11 @@
+# Packages for the Long-Term Memory Conversational Chat Assistant.
+# Install with:  pip install -r requirements.txt
+# Versions are the ones this project was built and tested with (Python 3.14).
+
+langchain-core==1.7.0      # Messages, prompt templates, output parsers, vector store
+langchain-openai==1.7.2    # ChatOpenAI and OpenAIEmbeddings (connects LangChain to OpenAI)
+langchain==1.4.7           # Main LangChain package (installed in Step 1; the code imports from the two above)
+python-dotenv==1.2.4       # Loads OPENAI_API_KEY from the .env file
+pydantic==2.14.1           # Defines the structured output shape in memory_extractor.py
+numpy==2.5.4               # Fast maths used by the vector store's similarity search
+streamlit==1.66.1          # Web interface (app.py)
