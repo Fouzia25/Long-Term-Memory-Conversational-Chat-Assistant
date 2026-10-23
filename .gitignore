@@ -1,18 +1,28 @@
-# Secrets: never commit your API key
-.env
 
-# Personal data: saved memories about the user
-memories.db
-test_memories.db
+# API keys and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local databases and private memories
+*.db
+*.sqlite
+*.sqlite3
 memories.json
 test_memories.json
 
-# Virtual environment (recreate it with: pip install -r requirements.txt)
-.venv/
+# Logs and cache
+*.log
+.pytest_cache/
 
-# Python cache files
-__pycache__/
-*.pyc
-
-# Editor settings
+# IDE settings
 .vscode/
+
+
